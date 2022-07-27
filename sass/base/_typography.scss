@@ -1,0 +1,69 @@
+@mixin skew {
+  transform: skewX(-10deg);
+  transition: all 0.2s;
+}
+
+.h1 {
+  font-family: $font-primary;
+  font-weight: 700;
+  line-height: 0.7;
+  font-size: 10rem;
+
+  &--main {
+    font-size: 14rem;
+    display: block;
+    animation: moveInLeft 0.5s ease-out;
+  }
+
+  &--sub {
+    display: block;
+    animation: moveInRight 0.5s ease-out;
+  }
+
+  &:hover {
+    @include skew;
+  }
+}
+
+.h3 {
+  font-family: $font-primary;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+
+  &--thin {
+    font-weight: 400;
+  }
+  &--animated {
+    animation: moveInBottom 0.5s ease-out 0.5s;
+    animation-fill-mode: backwards;
+    transition: all 0.2s;
+
+    &:hover {
+      @include skew;
+    }
+  }
+}
+
+.h5 {
+  font-family: $font-primary;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.paragraph {
+  font-family: $font-primary;
+  font-size: 3rem;
+  line-height: 1.3;
+  font-weight: 300;
+}
+
+.header__figcaption {
+  font-family: $font-primary;
+  font-size: 4rem;
+  line-height: 1;
+  font-weight: 300;
+}

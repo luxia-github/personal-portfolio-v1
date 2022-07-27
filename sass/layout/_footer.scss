@@ -1,0 +1,15 @@
+.footer {
+  background-color: $color-primary-dark;
+  min-height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.footer__copyright {
+  color: white;
+  font-family: $font-primary;
+  font-weight: 200;
+  font-size: 2rem;
+}

@@ -1,0 +1,48 @@
+.btn {
+  font-family: $font-primary;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+  padding: 1rem 2.5rem;
+  border-radius: 1rem;
+  display: flex;
+  display: flex;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  transition: all, 0.2s;
+}
+
+.btn__about-me {
+  font-family: $font-primary;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1;
+  text-decoration: none;
+  padding: 0.25rem 2rem;
+  border-radius: 10rem;
+  display: flex;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  color: $color-primary;
+  transition: color 0.2s;
+  border: 2px solid currentColor;
+
+  svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 0.5rem;
+    fill: currentColor;
+  }
+
+  &:hover {
+    animation: pulsate 0.5s ease-out infinite;
+    color: $color-secondary;
+
+    svg {
+      fill: currentColor;
+    }
+  }
+}

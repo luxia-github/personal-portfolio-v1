@@ -1,0 +1,65 @@
+// color variables
+$color-primary: #807094;
+$color-primary-dark: #604f71;
+
+$color-secondary: #ef98a7;
+$color-secondary-dark: #f7bea9;
+
+$color-tertiary: #c69963;
+$color-tertiary-dark: #b28451;
+
+$color-grey-1: #f3f3f3;
+$color-grey-2: #afafaf;
+$color-grey-3: #282828;
+
+// font variables
+$font-primary: "League Spartan", sans-serif;
+$font-secondary: "Libre Baskerville", serif;
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  @media only screen and (max-width: 1200px) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    font-size: 37.5%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    font-size: 25%;
+  }
+}
+
+body {
+  font-family: $font-primary;
+  color: $color-grey-3;
+  font-weight: 400;
+  line-height: 1.6;
+  position: relative;
+}
+
+::selection {
+  background-color: $color-primary;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 106.25em; // 1700px
+$bp-large: 75em; // 1200px
+$bp-medium: 62.5em; // 1000px;
+$bp-small: 37.5em; // 600px;

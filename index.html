@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- <link rel="shortcut icon" type="image/png" href="img/icon.png" /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;400;600;800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Portfolio | Lu Xia</title>
+  </head>
+  <body>
+    <!--nav-->
+    <nav class="nav">
+      <ul class="nav-bar">
+        <li class="nav-item">
+          <a class="nav-link nav-link__about" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link__projects" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link nav-link__projects"
+            href="mailto:luxia888@gmail.com?"
+            >Contact</a
+          >
+        </li>
+      </ul>
+
+      <button class="navigation-open">
+        <div class="navigation-icon"></div>
+      </button>
+
+      <div class="social-links-container">
+        <a href="https://github.com/tigersgalaxy" class="social-link">
+          <svg class="social-link-icon">
+            <use xlink:href="../src/sprite.svg#icon-github"></use>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/luxia8888/" class="social-link">
+          <svg class="social-link-icon">
+            <use xlink:href="../src/sprite.svg#icon-linkedin2"></use>
+          </svg>
+        </a>
+        <a href="https://codepen.io/tigersgalaxy" class="social-link">
+          <svg class="social-link-icon">
+            <use xlink:href="../src/sprite.svg#icon-codepen"></use>
+          </svg>
+        </a>
+      </div>
+    </nav>
+
+    <div class="navigation-page">
+      <ul class="navigation-vertical">
+        <li class="navigation-item">
+          <a class="navigation-link" href="#about">About</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#projects">Projects</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="mailto:luxia888@gmail.com?"
+            >Contact</a
+          >
+        </li>
+      </ul>
+      <button href="#" class="navigation-close">
+        <div class="navigation-close-icon"></div>
+      </button>
+    </div>
+
+    <!--header-->
+    <header class="header">
+      <div class="header-top">
+        <div class="header__text-container">
+          <div class="header__text">
+            <h1 class="h1">
+              <span class="h1--main">Hello</span>
+              <span class="h1--sub margin-bottom-sm">I am Lu Xia</span>
+            </h1>
+            <h3 class="h3 h3--thin h3--animated">✨I create for the web</h3>
+          </div>
+        </div>
+        <figure class="header__image-container">
+          <img
+            src="../src/study-girl.jpg"
+            alt="Lu Xia working at the desk"
+            class="header__image--1"
+          />
+          <figcaption class="header__figcaption">
+            I also create digital illustrations
+          </figcaption>
+        </figure>
+      </div>
+      <div class="header-bottom">
+        <a href="#about" class="btn__about-me">
+          About me
+          <span>
+            <svg>
+              <use xlink:href="../src/sprite.svg#icon-arrow-down2"></use>
+            </svg>
+          </span>
+        </a>
+      </div>
+    </header>
+    <!--about-->
+    <section class="about" id="about">
+      <h1 class="h1 margin-bottom-md">About</h1>
+      <div class="tabs-container">
+        <button class="btn container__tab container__tab--1" data-tab="1">
+          Background
+        </button>
+        <button class="btn container__tab container__tab--2" data-tab="2">
+          Fun facts
+        </button>
+        <button class="btn container__tab container__tab--3" data-tab="3">
+          What I'm doing
+        </button>
+      </div>
+      <div class="contents-container">
+        <div
+          class="container__content container__content--1 container__content--active"
+        >
+          <p class="about-text">
+            I'm a <b>junior front-end developer</b> who has recently learned
+            everything about the web from the web for the past 6 months.
+          </p>
+          <p class="about-text">
+            I'm <b>proficient</b> with <b>HTML, CSS/SCSS, and JavaScript</b> and
+            my skill set is growing.
+          </p>
+          <p class="about-text">
+            I'm very <b>self-motivated</b> and <b>detail-oriented</b> with a
+            <b>passion for new technologies</b> in the front-end field.
+          </p>
+        </div>
+        <div class="container__content container__content--2">
+          <p class="about-text">
+            <b>I have 7+ years of experience in different creative fields</b>
+          </p>
+          <ul>
+            <li class="about-text">I was a landscape architectural designer</li>
+            <li class="about-text">
+              I am also a digital illustrator and animator
+            </li>
+          </ul>
+        </div>
+        <div class="container__content container__content--3">
+          <ul>
+            <li class="about-text">
+              I'm now <b>learning React</b> and
+              <b>reinforcing my Javascript skill</b>
+            </li>
+            <li class="about-text">
+              I'm constantly updating my portfolio website
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!--projects-->
+    <section class="projects" id="projects">
+      <h1 class="h1 margin-bottom-lg">Projects</h1>
+      <div class="project-cards">
+        <div class="project-card">
+          <div class="project-card__preview">
+            <img
+              src="./src/project-portfolio.JPG"
+              alt="portfolio page preview"
+              class="project-card__image"
+            />
+          </div>
+          <div class="project-card__description">
+            <h5 class="h5 margin-bottom-md">Portfolio</h5>
+            <p class="paragraph margin-bottom-md">
+              One sentence to describe the project. One sdfdgdfgentence to
+              summarize the tools and knowledge you use.dfdfdf One sentence to
+              describe the projectdfg One sentence to sudfgdfgmmarize the tools
+              and knowledge you use
+            </p>
+            <div class="project-links">
+              <a
+                href="https://natours-lu-xia.netlify.app/"
+                class="btn project-link project-link__1"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/tigersgalaxy/natours-outdoor-travel-booking-website"
+                class="btn project-link project-link__2"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card__preview">
+            <img
+              src="./src/project-natours.JPG"
+              alt="natours website preview"
+              class="project-card__image"
+            />
+          </div>
+          <div class="project-card__description">
+            <h5 class="h5 margin-bottom-md">Natours</h5>
+            <p class="paragraph margin-bottom-md">
+              One sentence to describe the project. One sdfdgdfgentence to
+              summarize the tools and knowledge you use.dfdfdf One sentence to
+              describe the projectdfg One sentence to sudfgdfgmmarize the tools
+              and knowledge you use
+            </p>
+            <div class="project-links">
+              <a
+                href="https://natours-lu-xia.netlify.app/"
+                class="btn project-link project-link__1"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/tigersgalaxy/natours-outdoor-travel-booking-website"
+                class="btn project-link project-link__2"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="project-card">
+          <div class="project-card__preview">
+            <img
+              src="./src/project-bankist-marketing.JPG"
+              alt="bankist marketing page preview"
+              class="project-card__image"
+            />
+          </div>
+          <div class="project-card__description">
+            <h5 class="h5 margin-bottom-md">Bankist Marketing Page</h5>
+            <p class="paragraph margin-bottom-md">
+              One sentence to describe the project. One sdfdgdfgentence to
+              summarize the tools and knowledge you use.dfdfdf One sentence to
+              describe the projectdfg One sentence to sudfgdfgmmarize the tools
+              and knowledge you use
+            </p>
+            <div class="project-links">
+              <a
+                href="https://bankist-marketing-page-lu-xia.netlify.app/"
+                class="btn project-link project-link__1"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/tigersgalaxy/bankist-marketing-page"
+                class="btn project-link project-link__2"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div> -->
+
+        <div class="project-card">
+          <div class="project-card__preview">
+            <img
+              src="./src/project-trillo.JPG"
+              alt="trillo website preview"
+              class="project-card__image"
+            />
+          </div>
+          <div class="project-card__description">
+            <h5 class="h5 margin-bottom-md">Trillo</h5>
+            <p class="paragraph margin-bottom-md">
+              One sentence to describe the project. One sdfdgdfgentence to
+              summarize the tools and knowledge you use.dfdfdf One sentence to
+              describe the projectdfg One sentence to sudfgdfgmmarize the tools
+              and knowledge you use
+            </p>
+            <div class="project-links">
+              <a
+                href="https://trillo-lu-xia.netlify.app/"
+                class="btn project-link project-link__1"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/tigersgalaxy/trillo-travel-booking-website"
+                class="btn project-link project-link__2"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card__preview">
+            <img
+              src="./src/project-nexter.JPG"
+              alt="nexter website preview"
+              class="project-card__image"
+            />
+          </div>
+          <div class="project-card__description">
+            <h5 class="h5 margin-bottom-md">Nexter</h5>
+            <p class="paragraph margin-bottom-md">
+              One sentence to describe the project. One sdfdgdfgentence to
+              summarize the tools and knowledge you use.dfdfdf One sentence to
+              describe the projectdfg One sentence to sudfgdfgmmarize the tools
+              and knowledge you use
+            </p>
+            <div class="project-links">
+              <a
+                href="https://nexter-lu-xia.netlify.app/"
+                class="btn project-link project-link__1"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/tigersgalaxy/nexter-real-estate-finding-application"
+                class="btn project-link project-link__2"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card__preview">
+            <img
+              src="./src/project-bankist-online-banking.JPG"
+              alt="bankist online banking website preview"
+              class="project-card__image"
+            />
+          </div>
+          <div class="project-card__description">
+            <h5 class="h5 margin-bottom-md">Bankist Online Banking</h5>
+            <p class="paragraph margin-bottom-md">
+              One sentence to describe the project. One sdfdgdfgentence to
+              summarize the tools and knowledge you use.dfdfdf One sentence to
+              describe the projectdfg One sentence to sudfgdfgmmarize the tools
+              and knowledge you use
+            </p>
+            <div class="project-links">
+              <a
+                href="https://bankist-online-banking-lu-xia.netlify.app/"
+                class="btn project-link project-link__1"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/tigersgalaxy/bankist-online-banking-application"
+                class="btn project-link project-link__2"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card__preview">
+            <img
+              src="./src/project-forkify.JPG"
+              alt="forkify application preview"
+              class="project-card__image"
+            />
+          </div>
+          <div class="project-card__description">
+            <h5 class="h5 margin-bottom-md">Forkify</h5>
+            <p class="paragraph margin-bottom-md">
+              One sentence to describe the project. One sdfdgdfgentence to
+              summarize the tools and knowledge you use.dfdfdf One sentence to
+              describe the projectdfg One sentence to sudfgdfgmmarize the tools
+              and knowledge you use
+            </p>
+            <div class="project-links">
+              <a
+                href="https://forkify-lu-xia.netlify.app/"
+                class="btn project-link project-link__1"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/tigersgalaxy/forkify-recipe-application"
+                class="btn project-link project-link__2"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card__preview">
+            <img
+              src="./src/project-mapty.JPG"
+              alt="mapty application preview"
+              class="project-card__image"
+            />
+          </div>
+          <div class="project-card__description">
+            <h5 class="h5 margin-bottom-md">Mapty</h5>
+            <p class="paragraph margin-bottom-md">
+              One sentence to describe the project. One sdfdgdfgentence to
+              summarize the tools and knowledge you use.dfdfdf One sentence to
+              describe the projectdfg One sentence to sudfgdfgmmarize the tools
+              and knowledge you use
+            </p>
+            <div class="project-links">
+              <a
+                href="https://mapty-lu-xia.netlify.app/"
+                class="btn project-link project-link__1"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/tigersgalaxy/mapty-workout-log-application"
+                class="btn project-link project-link__2"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--footer-->
+    <footer class="footer">
+      <p class="footer__copyright">&copy; Copyright by Lu Xia 2022</p>
+    </footer>
+    <!--scroll to top-->
+    <a href="#" class="scroll-to-top"
+      ><svg class="scroll-to-top__icon">
+        <use xlink:href="../src/sprite.svg#icon-rocket"></use></svg
+    ></a>
+  </body>
+  <script src="script.js"></script>
+</html>

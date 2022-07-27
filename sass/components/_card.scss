@@ -1,0 +1,54 @@
+.project-card {
+  background-color: white;
+  border: 1px solid $color-grey-2;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all, 0.2s;
+
+  &:hover {
+    box-shadow: 0 1rem 4rem rgba(black, 0.1);
+    transform: translateY(-0.25rem);
+  }
+}
+
+.project-card__image {
+  width: 100%;
+  filter: brightness(70%);
+  transition: all 0.2s;
+
+  &:hover {
+    filter: brightness(100%);
+  }
+}
+
+.project-card__description {
+  padding: 4rem;
+}
+
+.project-links {
+  display: flex;
+  justify-content: center;
+
+  :not(:last-child) {
+    margin-right: 2.5rem;
+  }
+}
+
+.project-link {
+  color: white;
+
+  &:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 1rem 2rem rgba(black, 0.1);
+  }
+
+  &__1 {
+    background-color: $color-primary;
+  }
+
+  &__2 {
+    background-color: $color-tertiary;
+  }
+}
