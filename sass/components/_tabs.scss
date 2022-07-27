@@ -55,8 +55,16 @@
   z-index: 0;
   padding: 10rem 20rem;
 
+  @media only screen and (max-width: $bp-large) {
+    width: 140rem;
+    height: 60rem;
+    padding: 10rem 20rem 0rem 20rem;
+  }
+
   @media only screen and (max-width: $bp-medium) {
-    padding: 30rem 8rem 25rem 8rem;
+    width: 140rem;
+    height: 50rem;
+    padding: 10rem 10rem 0rem 10rem;
   }
 }
 
