@@ -12,6 +12,11 @@
   border: none;
   cursor: pointer;
   transition: all, 0.2s;
+
+  &__disabled {
+    pointer-events: none;
+    background-color: $color-grey-2;
+  }
 }
 
 .btn__about-me {

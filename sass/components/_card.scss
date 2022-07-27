@@ -25,6 +25,8 @@
 
 .project-card__description {
   padding: 4rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-links {

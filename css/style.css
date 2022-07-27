@@ -70,12 +70,28 @@ html {
   font-size: 5rem;
   font-weight: 700;
   line-height: 1; }
+  .h5 span {
+    display: block;
+    font-family: "League Spartan", sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1; }
 
 .paragraph {
   font-family: "League Spartan", sans-serif;
   font-size: 3rem;
   line-height: 1.3;
   font-weight: 300; }
+  .paragraph a {
+    text-decoration: none;
+    color: #282828;
+    font-style: italic;
+    border-bottom: 2px solid #282828;
+    transition: all 0.2s; }
+    .paragraph a:hover {
+      box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+      color: #807094;
+      border-bottom: 2px solid #807094; }
 
 .header__figcaption {
   font-family: "League Spartan", sans-serif;
@@ -447,6 +463,9 @@ html {
   border: none;
   cursor: pointer;
   transition: all, 0.2s; }
+  .btn__disabled {
+    pointer-events: none;
+    background-color: #afafaf; }
 
 .btn__about-me {
   font-family: "League Spartan", sans-serif;
@@ -556,7 +575,9 @@ html {
     filter: brightness(100%); }
 
 .project-card__description {
-  padding: 4rem; }
+  padding: 4rem;
+  display: flex;
+  flex-direction: column; }
 
 .project-links {
   display: flex;
